@@ -46,16 +46,6 @@ def parse_weather(w, day):
 
 def get_weather(lat, lon, day='current'):
     days = {'today': 0, 'tomorrow': 1}
-    names = ["today we", "tomorrow we'll"]
-    frisbee = {
-        'Thunderstorm': 'too scary for frisbee',
-        'Drizzle': 'a bit wet for frisbee',
-        'Rain': 'too wet for frisbee',
-        'Fog': 'cant see enough for frisbee',
-        'Snow': 'better wrap up if u wanna frisbee',
-        'Clear': 'perfect for frisbee!',
-        'Clouds': 'pretty good for frisbee'
-    }
     weather = get_weather_json(lat, lon)
 
     if day == 'current':
